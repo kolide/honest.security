@@ -1,0 +1,35 @@
+{{ define "header" }}
+{{ partial "hero.html" . }}
+{{ end }}
+
+{{ define "main" }}
+{{ if .Params.tenets }}
+<div class="homepage__cta">
+  <a href="/introduction" class="button button--cta">Start Reading <img class="arrow" src="/images/arrow.svg"></a>
+</div>
+<hr class="homepage__tenets-mobile-divider" />
+<div class="tenets homepage__tenets">
+  <h3 class="tenets__header">THE TENETS OF HONEST SECURITY</h3>
+  <div class="tenets__list">
+  {{ range $index, $tenet := .Params.tenets }}
+    <div class="tenets__list-item">
+      <div class="tenets__list-item-number">{{ add $index 1 }}</div>
+      <div>{{ $tenet | markdownify }}</div>
+    </div>
+  {{ end }}
+  </div>
+</div>
+<hr />
+{{ end }}
+<ul id="toc" class="homepage__toc">
+{{ range $index, $element := .Pages }}
+  {{ $c :=add $index 1 }}
+  <li class="homepage__toc-item">
+    <a class="homepage__toc-item-link" href="{{$element.RelPermalink}}">{{$c}}. {{$element.Title}}</a>
+      <p class="homepage__toc-item-description">
+        {{- $element.Description -}}
+      </p>
+  </li>
+{{ end }}
+</ul>
+{{ end }}

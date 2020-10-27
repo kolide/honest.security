@@ -1,0 +1,30 @@
+{{ define "aside" }}
+  <div class="single__aside" data-target="toggle.elementToToggle">
+    <div class="single__aside-header">
+      <a class="single__aside-link" href="/">honest.security</a>
+    </div>
+    <ul class="single__aside-toc">
+      {{ .TableOfContents }}
+      <hr />
+      <a class="single__aside-toc-back-link" href="/#toc">← Back To Main TOC</a>
+    </ul>
+  </div>
+{{ end }}
+{{ define "main" }}
+  <div class="single">
+    <div class="single__aside-mobile-header">
+      <img class="single__aside-expand" src="/images/hamburger-lines.svg" data-target="aside.toggleControl"/>
+      <a class="single__aside-link" href="/">honest.security</a>
+    </div>
+    {{ $img := (.Resources.ByType "image").GetMatch "images/*featured.png*" }}
+    {{ with $img }}
+      <img class="single__featured-image" src="{{.RelPermalink}}" alt="{{ $.Title }}" />
+    {{ end }}
+    <div class="single__content">
+      {{ .Content }}
+    </div>
+    {{with .Site.RegularPages.Prev . }}
+      <a class="single__next-link"  href="{{.RelPermalink}}">{{.Title}} &rarr;</a>
+    {{end}}
+  </div>
+{{ end }}

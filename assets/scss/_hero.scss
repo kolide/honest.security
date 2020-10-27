@@ -1,0 +1,140 @@
+%version {
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.6px;
+  color: $text-color-accent;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 435px;
+  padding: 40px 0 0;
+  margin-bottom: -50px;
+
+  @media (max-width: $tablet-max) {
+    padding: 0;
+    margin: 0 0 48px;
+    height: unset;
+  }
+
+  &__version-number {
+    @extend %version;
+    font-family: $primary-font-family;
+  }
+
+  &__version-text {
+    @extend %version;
+    font-family: $secondary-font-family;
+
+    @media (max-width: $mobile-max) {
+      display: none;
+    }
+  }
+
+  &__title-group {
+    text-align: center;
+
+    @media (max-width: $mobile-max) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $primary-font-family;
+    font-size: 96px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 600;
+    letter-spacing: -3px;
+
+    @media (max-width: $mobile-max) {
+      font-size: 50px;
+      letter-spacing: unset;
+    }
+  }
+
+  &__description {
+    max-width: 680px;
+    margin: 0;
+    font-family: $secondary-font-family;
+    font-size: 39px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+
+    @media (max-width: $mobile-max) {
+      font-size: 24px;
+      line-height: 1.64;
+      text-align: center;
+      padding: 0 40px;
+    }
+  }
+
+ &__image-one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 362px;
+    height: 174px;
+    object-fit: contain;
+
+    @media (max-width: $tablet-max) {
+      display: none;
+    }
+ }
+
+ &__image-two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 180px;
+    object-fit: contain;
+
+    @media (max-width: $tablet-max) {
+      display: none;
+    }
+  }
+
+ &__image-three {
+    position: absolute;
+    top: 180px;
+    right: 0;
+    width: 276px;
+    height: 288px;
+    object-fit: contain;
+
+    @media (max-width: $tablet-max) {
+      display: none;
+    }
+  }
+
+  &__mobile-image {
+    display: none;
+    width: 100vw;
+    object-fit: cover;
+    margin: 0 0 40px;
+
+
+    @media (max-width: $tablet-max) {
+      display: block;
+    }
+
+    @media (max-width: $tablet-max) and (min-width: $tablet-min) {
+      margin: 0 0 80px;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.homepage {
+  &__tenets {
+    margin: 0 0 60px;
+  }
+
+  &__cta {
+    display: flex;
+    align-self: flex-start;
+    margin-top: -36px;
+
+    .button {
+      margin-bottom: 34px;
+    }
+
+    @media (max-width: $mobile-max) {
+      align-self: center;
+    }
+  }
+
+  &__tenets-mobile-divider {
+    display: none;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+    }
+  }
+
+  &__toc {
+    align-self: flex-start;
+    list-style: none;
+    margin: 40px 0 0 33px;
+    padding: 0;
+  }
+
+  &__toc-item {
+    max-width: 680px;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    margin: 0 0 20px;
+
+    @media (max-width: $mobile-max) {
+      max-width: 100vw;
+      font-size: 28px;
+      line-height: 1.71;
+    }
+  }
+
+  &__toc-item-link {
+    color: $text-color-primary;
+  }
+
+  &__toc-item-description {
+    font-family: $secondary-font-family;
+    font-size: 22px;
+    line-height: 1.64;
+    font-weight: normal;
+    margin: 15px 0 22px;
+
+    &:empty {
+      height: 40px;
+    }
+
+    @media (max-width: $mobile-max) {
+      font-size: 22px;
+      line-height: 1.5;
+
+      &:empty {
+        height: unset;
+      }
+    }
+  }
+}
+
+.button {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 4px;
+  background-color: #3f64ed;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .15s cubic-bezier(.455,.03,.515,.955);
+  transition-property: box-shadow, top;
+  position: relative;
+  top: 0;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+
+  &--cta {
+    width: 250px;
+    height: 64px;
+    font-size: 32px;
+    border-radius: 8px;
+  }
+
+  .arrow {
+    margin-left: 10px;
+  }
+}

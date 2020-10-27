@@ -1,0 +1,5 @@
+baseURL = "https://honest.security/"
+languageCode = "en-us"
+title = "Honest Security"
+defaultContentLanguage = "en"
+enableGitInfo = "true"

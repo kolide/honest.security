@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>hamburger-lines</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.24">
+        <g id="Artboard-Copy" transform="translate(-413.000000, -51.000000)" fill="#181B29">
+            <path d="M429.5,65 C430.328427,65 431,65.6715729 431,66.5 C431,67.3284271 430.328427,68 429.5,68 L414.5,68 C413.671573,68 413,67.3284271 413,66.5 C413,65.6715729 413.671573,65 414.5,65 L429.5,65 Z M429.5,58 C430.328427,58 431,58.6715729 431,59.5 C431,60.3284271 430.328427,61 429.5,61 L414.5,61 C413.671573,61 413,60.3284271 413,59.5 C413,58.6715729 413.671573,58 414.5,58 L429.5,58 Z M429.5,51 C430.328427,51 431,51.6715729 431,52.5 C431,53.3284271 430.328427,54 429.5,54 L414.5,54 C413.671573,54 413,53.3284271 413,52.5 C413,51.6715729 413.671573,51 414.5,51 L429.5,51 Z" id="hamburger-lines"></path>
+        </g>
+    </g>
+</svg>

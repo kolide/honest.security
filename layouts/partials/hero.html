@@ -1,0 +1,17 @@
+<header class="hero">
+   <img class="hero__mobile-image" src="/images/pino-mobile.svg" atl="header image"/>
+   <div class="hero__title-group">
+    <h1 class="hero__title">
+      {{ .Title }}
+      <span class="hero__version-text">v
+        <span class="hero__version-number">
+          {{- .Params.version -}}
+        </span>
+      </span>
+    </h1>
+    <h2 class="hero__description">{{ .Site.Params.description }}</h1>
+  </div>
+  <img class="hero__image-one" src="/images/floating-heads-1.svg" atl="header image one"/>
+  <img class="hero__image-two" src="/images/floating-heads-2.svg" atl="header image two"/>
+  <img class="hero__image-three" src="/images/floating-heads-3.svg" atl="header image three"/>
+</header>

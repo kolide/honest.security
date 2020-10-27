@@ -1,0 +1,140 @@
+html {
+  font-family: $primary-font-family;
+  color: $text-color-primary;
+  scroll-behavior: smooth;
+}
+
+hr {
+  width: 90%;
+  border: 1px solid $text-color-accent-secondary;
+  margin: 0 auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.tweet {
+  display: inline-flex;
+  max-width: 20em;
+  padding: 0.75em;
+  border-radius: 0.5rem;
+  z-index: 100;
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0;
+  background: #000;
+  color: #fff;
+  left: unset !important;
+  right: 20px !important;
+  margin-top: -10px;
+
+  @media (max-width: $mobile-max) {
+    left: 20px !important;
+    right: 20px !important;
+    top: unset !important;
+    bottom: 20px !important;
+    position: fixed !important;
+    margin: 0 auto;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+
+  svg {
+    margin-left: 10px;
+    fill: #fff;
+  }
+}
+
+.no-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
+#aside {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 89px;
+  align-self: flex-start; /* needed for position: sticky */
+  margin: 89px 53px 0 -323px;
+  width: 270px;
+  overflow: hidden;
+
+  @media (max-width: $mobile-max) {
+    width: 230px;
+  }
+
+  @media (max-width: $tablet-max) and (min-width: $mobile-max) {
+    width: 320px;
+  }
+
+  @media (max-width: $tablet-max) {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    height: calc(100% - 40px);
+    overflow: scroll;
+    transition: left 0.4s ease-in-out;
+
+    &:before {
+      content: "";
+      display: none;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #fff;
+      opacity: 0.8;
+    }
+
+    .single__aside-header {
+      display: none;
+    }
+  }
+
+  &.aside--visible {
+    @media (max-width: 1329px) {
+      left: 0;
+      box-shadow: 2px 2px 4px 0 rgb(24, 27, 4);
+
+      &:before {
+        display: block;
+      }
+    }
+  }
+}
+
+#content {
+  display: flex;
+  flex: 1 0 auto;
+  margin: 0 0 248px;
+
+  @media (max-width: $tablet-min) {
+    margin: 0 0 160px;
+  }
+
+  .content__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 680px;
+
+    @media (max-width: $mobile-max) {
+      padding: 0 20px;
+      max-width: 100%;
+    }
+  }
+}
