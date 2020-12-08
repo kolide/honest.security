@@ -24,7 +24,7 @@ expending considerable effort attempting to fool, entrap, and subsequently
 humiliate their potential students into demonstrating their lack of knowledge.
 That’s not a great way to build up a working relationship.
 
-## 100% Compliance Is Impossible Only Alone
+## 100% Compliance Is Impossible With Automation Alone
 
 On the compliance side, the existing approaches aren’t much better. Products
 exist which allow you, with a single click, to remotely change all the settings
