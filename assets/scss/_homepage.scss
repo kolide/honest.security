@@ -1,6 +1,28 @@
 .homepage {
   &__tenets {
-    margin: 0 0 60px;
+    margin: 0 0 30px;
+  }
+
+  &__podcast {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+    @media (max-width: $mobile-max) {
+      margin-top: 30px;
+      text-align: justify;
+    }
+
+    a {
+      color: #000;
+    }
+
+    img {
+      height: 24px;
+      margin-right: 10px;
+    }
+
   }
 
   &__cta {
@@ -13,7 +35,11 @@
     }
 
     @media (max-width: $mobile-max) {
-      align-self: center;
+      display: block;
+      text-align: center;
+      .button {
+        margin-bottom: 18px;
+      }
     }
   }
 
@@ -93,12 +119,26 @@
   font-size: 14px;
   cursor: pointer;
   border: none;
+  margin-right: 10px;
 
   &--cta {
     width: 250px;
     height: 64px;
     font-size: 32px;
     border-radius: 8px;
+
+    @media (max-width: $mobile-max) {
+      width: 200px;
+      height: 50px;
+      font-size: 25px;
+      marign-right: 0;
+    }
+  }
+
+  &--cta-pdf {
+    color: #000;
+    border: 1px solid #000;
+    background: #fff;
   }
 
   .arrow {
