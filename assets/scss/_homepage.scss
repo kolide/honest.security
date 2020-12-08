@@ -136,9 +136,16 @@
   }
 
   &--cta-pdf {
-    color: #000;
-    border: 1px solid #000;
-    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    color: #181b29;
+    background: #ebeff5;
+
+    img {
+      position: relative;
+      top: -1px;
+      margin-left: 10px;
+    }
   }
 
   .arrow {
