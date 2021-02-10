@@ -112,8 +112,8 @@ and mitigate them. [^1]
 
 [^1]: Since osquery only one of a few endpoint agents that actually makes _any_
 consideration for the end-user's privacy, you might find this criticism unfair.
-However, I know many of the people on the core team. Not only can take the heat,
-but they are incredibly responsive to feedback. I know together we can get
+However, I know many of the people on the core team. Not only can they take the
+heat, but they are incredibly responsive to feedback. I know together we can get
 osquery and many other projects compatible with Honest Security.
 
 As you can see, open-source does not inherently create things that can solely be
