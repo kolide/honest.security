@@ -15,5 +15,6 @@
     {{ $stimulusjs := resources.Get "js/vendor/stimulus.umd.js" }}
     {{ $js := slice $stimulusjs $built | resources.Concat "main.js" | resources.Minify | fingerprint }}
     <script type="text/javascript" src="{{ $js.RelPermalink }}" defer></script>
+    <script defer data-domain="honest.security" src="https://plausible.io/js/plausible.js"></script>
     <title>{{ .Title }}</title>
 </head>
