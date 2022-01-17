@@ -132,9 +132,9 @@ permission fatigue that results in the blanket consent for any task.
 Where informed consent is inappropriate, transparency is essential. Many
 security products feature audit logs, but those audit logs are rarely readily
 accessible to end-users who stand to lose the most when a bad-actor abuses their
-access to their work device. In order for the automatic accountability
-transparency brings to bear, it must be consistently applied to all mechanisms
-available to the administrators to obtain data.
+access to their work device. In order for the automatic accountability of
+transparency to apply, it must be consistently applied to all mechanisms
+available to obtain data.
 
 ### Example: A Privacy Center
 
