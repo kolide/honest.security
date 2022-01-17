@@ -11,7 +11,21 @@
     <img src="/images/pdf-file.svg">
   </a>
 </div>
-<hr class="homepage__tenets-mobile-divider" />
+<div class="homepage__latest">
+  <header class="homepage__latest-header">
+    <h1 class="homepage__latest-header-title">Honest Security News/Content</h1>
+  </header>
+  <ul class="homepage__latest-list">
+    <li class="homepage__latest-list-item">
+      📝 <span class="homepage__latest-list-item-type">Blog</span> <span class="dash">-</span>
+      <a href="https://blog.kolide.com/honest-security-one-year-later-af4f4af1661">Honest Security: 1 Year Later</a>
+    </li>
+    <li class="homepage__latest-list-item">
+      🎙️ <span class="homepage__latest-list-item-type">Podcast</span> <span class="dash">-</span>
+      <a href="https://podcast.macadmins.org/2021/12/08/episode-245-honest-security-one-year-later/">1Password & Honest Security</a>
+    </li>
+  </ul>
+</div>
 <div class="tenets homepage__tenets">
   <h3 class="tenets__header">THE TENETS OF HONEST SECURITY</h3>
   <div class="tenets__list">
@@ -24,11 +38,6 @@
   </div>
 </div>
 <hr class="homepage__tenets-mobile-divider" />
-<div class="homepage__podcast">
-  <img src="/images/mic.svg" />
-  <a href="https://hackervalley.com/e/episode-109-honest-security-with-jason-meller/" target="_blank">Listen to the podcast about Honest Security at Hacker Valley Studio.</a>
-</div>
-<hr />
 {{ end }}
 <ul id="toc" class="homepage__toc">
 {{ range $index, $element := .Pages }}
