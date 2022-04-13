@@ -39,6 +39,7 @@
     grid-template-columns: 0 1fr;
     grid-gap: 55px;
     align-items: baseline;
+    width: 582px;
 
     @media (max-width: $mobile-max) {
       display: block;
