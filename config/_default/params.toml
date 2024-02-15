@@ -1,3 +1,4 @@
 description = "A guide to endpoint security and device management that doesn't erode your values."
-copyright = "Kolide"
+copyright = "©2024 Kolide"
+author = "Jason Meller"
 ghrepo = "https://github.com/kolide/honest.security"
