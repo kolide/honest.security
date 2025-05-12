@@ -7,7 +7,7 @@
     {{ printf `<link rel="shortcut icon" href="%s">` ("favicon.ico" | absURL) | safeHTML }}
     <link rel="stylesheet" href="https://use.typekit.net/feo7qjx.css">
     {{ $options := (dict "outputStyle" "compressed") }}
-    {{ $stylesheet := resources.Get "scss/main.scss" | resources.ToCSS $options }}
+    {{ $stylesheet := resources.Get "scss/main.scss" | css.Sass $options }}
     {{ $normalize := resources.Get "css/normalize.css" }}
     {{ $styles := slice $stylesheet $normalize | resources.Concat "main.css" | resources.Minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
