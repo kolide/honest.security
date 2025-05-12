@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/816bfb9b-6690-4d72-96c7-f5de5ab676c2/deploy-status)](https://app.netlify.com/sites/honestsecurity/deploys)
-
 # honest.security
 [honest.security](https://honest.security) Guide Micro Site
 
